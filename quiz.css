@@ -6,6 +6,10 @@ body {
   background-size: 120px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 header {
   font-size: 20px;
   margin: 1em auto;
