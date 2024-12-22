@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  font-size: 30px;
+  font-size: 20px;
   margin: 1em auto;
   text-align: center;
 }
@@ -17,7 +17,7 @@ h1 {
 }
 
 header p {
-  font-size: 30px;
+  font-size: 20px;
   min-width: 300px;
   margin: 0;
 }
@@ -34,25 +34,25 @@ main {
 
 .score {
   text-align: center;
-  font-size: x-large;
+  font-size: 20px;
   margin-top: 5px;
 }
 
 #statement {
   border: 1px solid black;
   padding: 1rem;
-  font-size: x-large;
+  font-size: 20px;
   text-align: center;
   margin: 0px;
   min-height: 2em;
   background-color: #ebedec;
-  width: 100%;
+  width: 90%;
 }
 
 #explanation {
   padding: 15px;
-  font-size: 25px;
-  width: 100%;
+  font-size: 20px;
+  width: 90%;
   text-align: center;
   margin: none;
 }
@@ -75,7 +75,7 @@ main {
 
 button {
   padding: 10px;
-  font-size: 20px;
+  font-size: 15px;
   min-width: 30vw;
   width: 80%;
   background-color: #e1ecf0;
