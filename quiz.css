@@ -46,13 +46,13 @@ main {
   margin: 0px;
   min-height: 2em;
   background-color: #ebedec;
-  width: 400px;
+  width: 100%;
 }
 
 #explanation {
   padding: 15px;
   font-size: 25px;
-  width: 400px;
+  width: 100%;
   text-align: center;
   margin: none;
 }
@@ -77,7 +77,7 @@ button {
   padding: 10px;
   font-size: 20px;
   min-width: 30vw;
-  width: 200px;
+  width: 80%;
   background-color: #e1ecf0;
   font-weight: bold;
   border: 1px solid black;
