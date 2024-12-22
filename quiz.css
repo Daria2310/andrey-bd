@@ -52,8 +52,9 @@ h1 {
 }
 
 header p {
-  text-shadow: 1px 1px 0px white;
+  text-shadow: 2px 2px 0px white;
   font-size: 20px;
+  font-weight: bold;
   min-width: 300px;
   margin: 0;
 }
