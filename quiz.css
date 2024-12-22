@@ -45,13 +45,15 @@ main {
   margin: 0px;
   min-height: 2em;
   background-color: #ebedec;
-  width: 400px;
+  width: 80%;
+  max-width: 400px;
 }
 
 #explanation {
   padding: 15px;
   font-size: 20px;
-  width: 400px;
+  width: 80%;
+  max-width: 400px;
   text-align: center;
   margin: none;
 }
