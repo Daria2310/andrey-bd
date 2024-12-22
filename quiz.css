@@ -23,9 +23,8 @@ header p {
 }
 
 main {
-  max-width: 100%;
+  width: 100%;
   row-gap: 15px;
-  min-width: 25rem;
   margin: 20px auto;
   display: flex;
   flex-direction: column;
