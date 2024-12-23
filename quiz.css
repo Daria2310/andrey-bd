@@ -52,7 +52,9 @@ h1 {
 }
 
 header p {
-  text-shadow: 1px 1px 0px white;
+  color: white; /* Цвет текста */
+  -webkit-text-stroke: 1px black; /* Толщина и цвет контура */
+  text-align: center;
   font-size: 20px;
   font-weight: bold;
   min-width: 300px;
