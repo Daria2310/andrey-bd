@@ -106,7 +106,7 @@ nextQuestionButton.addEventListener("click", () => {
     } else {
       document.querySelector(
         ".score"
-      ).innerHTML = `Счет: ${rightGuesses}/${allGuesses}. Поздравляю! Ты отвратительно знаешь Андрея!`;
+      ).innerHTML = `Счет: ${rightGuesses}/${allGuesses}. Поздравляю! Ты крайне плохо знаешь Андрея!`;
     }
 
     document.getElementById("statement").style.display = "none";
