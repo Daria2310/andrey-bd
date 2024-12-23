@@ -30,7 +30,7 @@ const facts = [
   {
     statement: "Правда ли, что любимая еда Андрея - это мясо по-французски?",
     answer: false,
-    explanation: "На самом деле любимая Андрея - это уксус.",
+    explanation: "На самом деле любимая еда Андрея - это уксус.",
   },
   {
     statement:
@@ -39,15 +39,14 @@ const facts = [
     explanation: "Это неправда.",
   },
   {
-    statement: "Правда ли, что Андрей - полиглот (владеет 5 и больше языками)?",
+    statement: "Правда ли, что Андрей хуже Данила?",
     answer: true,
-    explanation:
-      "Это правда. Он знает русский, украинский, английский, иврит, C++, JavaScript, Python и др.",
+    explanation: "Это правда.",
   },
   {
     statement: "Правда ли, что Андрей?",
-    answer: true,
-    explanation: "Это правда.",
+    answer: false,
+    explanation: "Это неправда.",
   },
 ];
 
@@ -83,16 +82,44 @@ for (let button of optionButtons) {
     enable(nextQuestionButton);
 
     if (questionNumber === facts.length) {
-      nextQuestionButton.disabled = true;
-      nextQuestionButton.innerText = "Больше вопросов нет!";
+      nextQuestionButton.innerText = "Результат!";
     }
   });
 }
 
+const container = document.getElementById("image-container");
+const img = document.createElement("img");
+
+img.src = "./andrey-gif.gif";
+img.alt = "andrey";
+
 nextQuestionButton.addEventListener("click", () => {
+  nextQuestionButton.disabled = true;
+  if (questionNumber === facts.length) {
+    container.appendChild(img);
+    nextQuestionButton.disabled = true;
+
+    if (rightGuesses == allGuesses) {
+      document.querySelector(
+        ".score"
+      ).innerHTML = `Счет: ${rightGuesses}/${allGuesses}. Поздравляю! Ты знаешь Андрея!`;
+    } else {
+      document.querySelector(
+        ".score"
+      ).innerHTML = `Счет: ${rightGuesses}/${allGuesses}. Поздравляю! Ты отвратительно знаешь Андрея!`;
+    }
+
+    document.getElementById("statement").style.display = "none";
+    document.getElementById("options").style.display = "none";
+    document.getElementById("next-question").style.display = "none";
+    document.getElementById("explanation").style.display = "none";
+
+    return;
+  }
+
   fact = facts[questionNumber];
 
-  statement.textContent = fact?.statement;
+  statement.textContent = fact.statement;
 
   for (let otherButton of optionButtons) {
     enable(otherButton);
